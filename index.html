@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Note Taking App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="color: #fff;"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" class="container-fluid">
+      <h1 style="text-align: center;">
+        <b>One Stop Destination to store all your ideas!</b>
+      </h1>
+      <div class="row col-xs-6">
+        <p id="mainbox" style="font-size: 150%; padding-top: 1%;">
+          <b>Make A Note</b>
+        </p>
+      </div>
+    </div>
+    <form>
+      <textarea
+        name="formNoteText"
+        id="formNoteText"
+        cols="50"
+        rows="8"
+        maxlength="300"
+      ></textarea>
+      <select name="formColor" id="formColor">
+        <option value="none">Select Occasion</option>
+        <option value="red">Writing My Heart Out!</option>
+        <option value="green">School notes!</option>
+        <option value="blue">Friends and Family!</option>
+        <option value="yellow">Just for fun!</option>
+      </select>
+      <button id="formAddButton">Add note</button>
+    </form>
+
+    <div id="notes" contenteditable="true"></div>
+
+    <script src="app.js"></script>
+    <!--footer-->
+    <footer>
+      <div class="container container-fluid">
+        © 2020 Copyright Reserved
+      </div>
+    </footer>
+  </body>
+</html>
